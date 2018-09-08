@@ -1,0 +1,13 @@
+{
+  "name": "govhack-2018",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "latest",
+    "mysql": "latest",
+    "process": "^0.11.10",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "socket.io": "^2.1.1"
+  }
+}

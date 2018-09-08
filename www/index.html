@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World! (/www)</title>
+    <link href="static/fontawesome-pro-5.2.0-web/css/all.css" rel="stylesheet" type="text/css">
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="static/materialize/css/materialize.min.css">
+    <script src="static/materialize/js/materialize.js"></script>
+</head>
+<body>
+    <nav class="z-depth-2">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Trash 4 Cash</a>
+            <ul id="nav-mobile" class="right hand-on-med-and-down">
+                <li><a href="/app">
+                    <i class="fas fa-power-off fa-1x"></i> Start App
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="card-panel">
+                <h2>Food 4 Cash</h2>
+                <p>
+                    GovHack 2018 Entry
+                </p>
+                <h4>Requirements</h4>
+                <p>
+                    If you are reading this HTML file, it means that you've already set it all up client-side.
+                </p>
+                <p>
+                    On the server-side, you require:
+                </p>
+                <ul class="collection">
+                    <li class="collection-item">
+                        <h5>Node.js</h5>
+                        <p>
+                            And the following packages:
+                        </p>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <h6>express</h6>
+                                <p>
+                                    <a href="https://expressjs.com"><i class="far fa-globe fa-1x"></i> expressjs.com</a>
+                                </p>
+                                <blockquote>
+                                    <code>npm install express</code>
+                                </blockquote>
+                            </li>
+                            <li class="collection-item">
+                                <h6>sockets.io</h6>
+                                <p>
+                                    <a href="https://socket.io/"><i class="far fa-globe fa-1x"></i> socket.io</a>
+                                </p>
+                                <blockquote>
+                                    <code>npm install socket.io</code>
+                                </blockquote>
+                            </li>
+                            <li class="collection-item">
+                                <h6>mysql</h6>
+                                <p>
+                                    <i>The official MySQL driver provided by Oracle.</i>
+                                </p>
+                                <blockquote>
+                                    <code>npm install mysql</code>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    We are also additionally using the following frameworks and technologies (which are already installed or is not managed by a package manager of any sort).
+                </p>
+                <ul class="collection">
+                    <li class="collection-item">
+                        <h6>FontAwesome</h6>
+                        <a href="https://fontawesome.com"><i class="far fa-globe fa-1x"></i> fontawesome.com</a>
+                    </li>
+                    <li class="collection-item">
+                        <h6>jQuery</h6>
+                        <a href="https://jquery.com"><i class="far fa-globe fa-1x"></i> jquery.com</a>
+                    </li>
+                    <li class="collection-item">
+                        <h6>Materialize (Material UI Framework)</h6>
+                        <a href="https://materializecss.com"><i class="far fa-globe fa-1x"></i> materializecss.com</a>
+                    </li>
+                </ul>
+                <h4>Getting Started</h4>
+                <p>
+                    Simply start the Node.js server with the root folder as the context.
+                    You are currently at <code>/www/index.html</code>
+                </p>
+                <blockquote>
+                    <code>
+                        node app.js
+                    </code>
+                </blockquote>
+                <p>
+                    And finally, click on the "<i class="fas fa-power-off"></i> Start App" button, or go to
+                    <a href="/app"><code>localhost:3000/app</code></a>
+                </p>
+                <h4>Oh yeah...</h4>
+                <p>
+                    When you compile the Angular-CLI app, compile it with a different root path, otherwise it'll look for a <code>/main.js</code> that does not exist in <code>/www/main.js</code>.
+                    <br>
+                    To do so, simply compile it with the following arguments:
+                </p>
+                <blockquote>
+                    <code>ng build --base-href /app/</code>
+                </blockquote>
+                <p>
+                    Or for production:
+                </p>
+                <blockquote>
+                    <code>ng build --prod --base-href /app/</code>
+                </blockquote>
+                <p>
+                    <i>
+                        Source:
+                        <a href="https://stackoverflow.com/a/45230291/3505377" target="_blank">https://stackoverflow.com/questions/45229785/absolute-path-in-angular-cli</a>
+                    </i>
+                </p>
+                <p>
+                    Or, if you'd rather develop and have it pushed to the live server...
+                </p>
+                <blockquote>
+                    <code>ng build --base-href /app/ --watch</code>
+                </blockquote>
+                <p>
+                    And it'll <code>ng serve</code> to the <code>dist</code> folder.n
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <p>&nbsp;&copy; 2018, Timothy Chew (and eventually Griffith University)</p>
+    </footer>
+</body>
+</html>
